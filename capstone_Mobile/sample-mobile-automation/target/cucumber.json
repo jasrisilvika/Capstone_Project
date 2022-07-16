@@ -1,0 +1,3230 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-15T18:30:25.780Z",
+        "before": [
+          {
+            "result": {
+              "duration": 25635953400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "See all class",
+        "description": "",
+        "id": "homepage;see-all-class;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1261927700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2665590100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1020805900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1736144500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7355962700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 908762700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5696992200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 830214300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "All classes will show \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.allClassesWillShow(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeeAll"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:31:13.527Z",
+        "before": [
+          {
+            "result": {
+              "duration": 23315053400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "See all class",
+        "description": "",
+        "id": "homepage;see-all-class;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1229300400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2672641800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1016790900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1448060900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7343294400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1823648100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5244853500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 912561400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "All classes will show \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.allClassesWillShow(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeeAll"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:31:58.600Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22974032300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1172977200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2891392600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1048739400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1745108300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7419528300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1809172200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5347818300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1029971100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Weight Lifting\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4487409600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Weight Lifting\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:32:48.596Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22605322700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1289683700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3066593900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1088909800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1678438400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7505167700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 879975000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6078754200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1016329400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Body Building\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Body Building\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4600906200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Body Building\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Body Building\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:33:38.456Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22516231000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1151884000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3011553800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 480496200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2179824100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7360806900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 884508600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6011470800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 930690800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Yoga\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yoga\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4326104200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Yoga\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yoga\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:34:27.362Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22117130700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1346699300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2774036600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 410877900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2050664400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6699553200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 909389400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5949587100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 995178800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Weight Loss\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Loss\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4625253900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Weight Loss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Loss\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:35:15.283Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21932953200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1346240700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2736113700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 419926600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2025094400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7481183500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 895881500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5982538500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2832381700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Zumba\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zumba\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4382955500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Zumba\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zumba\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:36:05.362Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21552395000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 1322704300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2743449700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 471897600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1993536000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10594137400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 904508200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6013441100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2796713000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Cardio\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4567186800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Cardio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:36:58.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21343416700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 1238246400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2688343300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 422737200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1958550500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6694672400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1836149900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5064236700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2312794700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Cardio\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5159751600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Cardio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:37:47.127Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21831772100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 1517835500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2862027600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443512700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2045380900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7434217900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1852768900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5137563600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 916858800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Zumba\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zumba\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4724122900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Zumba\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zumba\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:38:35.934Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21572694800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 1398146200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2839734400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 438027800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2081282700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7430413900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1847443200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5175303600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1031558500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Yoga\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yoga\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5012105800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Yoga\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yoga\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:39:24.801Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21398736800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 1529481100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2821969100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 461104800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2044841300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7447226800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1854595300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7097951000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 961723600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Weight Loss\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Loss\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5058848900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Weight Loss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Loss\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:40:15.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22136746100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;12",
+        "after": [
+          {
+            "result": {
+              "duration": 1147251000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2878505100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 481825500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2095792500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7284976900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1884111600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5222495100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2753602200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Weight Lifting\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4717279400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Weight Lifting\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:41:06.159Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22368472100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "View detail class",
+        "description": "",
+        "id": "homepage;view-detail-class;;13",
+        "after": [
+          {
+            "result": {
+              "duration": 1271551000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2790683500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 446063900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2265738100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7385057300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 888702400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6085340400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2792548500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I choose a class \"Body Building\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Body Building\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4751385300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I validate result after view detail \"Body Building\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Body Building\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ViewDetail"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:41:57.248Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22166749600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 63,
+        "name": "Booking Class",
+        "description": "",
+        "id": "homepage;booking-class;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1150842500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2812922300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 416796500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2062931100,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6646979700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 912159800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6549360500,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I click see all class \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 982779000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I choose a class \"Weight Lifting\" \"Online\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Online\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4448609100,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I validate result after view detail \"Weight Lifting\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3355191500,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I click see all available class \"Online\" \"Weight Lifting\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Weight Lifting\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllAvailableClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5153652100,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click book now button",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iClickBookNowButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1821953300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click payment instruction button \"user@mail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickPaymentInstructionButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4916360200,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I validate the result after booking class",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iValidateTheResultAfterBookingClass()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookingClass"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:43:00.705Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21609779500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 64,
+        "name": "Booking Class",
+        "description": "",
+        "id": "homepage;booking-class;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1306541600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2750979100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 413580700,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2449577100,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11256486500,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 909978600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6142081700,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I click see all class \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllClass(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 965957200,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I choose a class \"Cardio\" \"Offline\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Offline\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iChooseAClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4969051800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I validate result after view detail \"Cardio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iValidateResultAfterViewDetail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3716177300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I click see all available class \"Offline\" \"Cardio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Offline\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Cardio\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickSeeAllAvailableClass(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5075762900,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click book now button",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iClickBookNowButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999377600,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click payment instruction button \"user@mail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickPaymentInstructionButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5202833800,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I validate the result after booking class",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iValidateTheResultAfterBookingClass()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookingClass"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:44:08.522Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21834901900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Tips For You",
+        "description": "",
+        "id": "homepage;tips-for-you;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1267680400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2803805500,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 429491600,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2095474300,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6671611400,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 924718600,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9679936600,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I click the tips \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickTheTips(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3562808100,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I validate the result after click tips",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iValidateTheResultAfterClickTips()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tips"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:44:57.838Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21963182900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 78,
+        "name": "Tips For You",
+        "description": "",
+        "id": "homepage;tips-for-you;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1217806800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2744883900,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1013350900,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1469482400,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7375944000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 922292500,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11154785300,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I click the tips \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.example.steps.HomeSteps.iClickTheTips(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3112132100,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I validate the result after click tips",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iValidateTheResultAfterClickTips()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tips"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T18:45:48.853Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21839745300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "Make a Payment",
+        "description": "",
+        "id": "homepage;make-a-payment",
+        "after": [
+          {
+            "result": {
+              "duration": 828467000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2879193500,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I am on splash screen",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iAmOnSplashScreen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1051106200,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I click get started button",
+            "match": {
+              "location": "com.example.steps.RegisterSteps.iClickGetStartedButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1588297000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I click login button on register",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7434246600,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I input the data for login \"user@mail.com\" \"Doremi123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@mail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Doremi123\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.example.steps.LoginSteps.iInputTheDataForLogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1006138800,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I click login button on login",
+            "match": {
+              "location": "com.example.steps.LoginSteps.iClickLoginButtonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5749954600,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I click schedule menu",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iClickScheduleMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1066133400,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I click pay now button",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iClickPayNowButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4036780300,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I validate the result after pay the booking",
+            "match": {
+              "location": "com.example.steps.HomeSteps.iValidateTheResultAfterPayTheBooking()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Payment"
+          },
+          {
+            "name": "@HomePage"
+          }
+        ]
+      }
+    ],
+    "name": "HomePage",
+    "description": "  As an user\n  I want to see all classes\n  So that I can booking a class",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/math/Homepage.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Regression Testing of All Feature","Login - Update Password - Logout","SUCCESS","2022-07-07T22:54:02.9519088+07:00[Asia/Bangkok]","0.0","67.51"
+"Regression Testing of All Feature","Login after update password","SUCCESS","2022-07-07T22:55:10.4991877+07:00[Asia/Bangkok]","0.0","43.73"

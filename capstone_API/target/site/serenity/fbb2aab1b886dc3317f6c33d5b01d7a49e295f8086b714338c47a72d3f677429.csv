@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Booking","GET - As an Admin I have to be able to get all classes","SUCCESS","2022-07-16T23:09:06.7654503+07:00[Asia/Bangkok]","0.0","9.74"
+"Booking","POST - As an Admin I have to be able to create a booking","SUCCESS","2022-07-16T23:09:16.5130386+07:00[Asia/Bangkok]","0.0","8.72"
+"Booking","GET - As an Admin I have to be able to get all booking","SUCCESS","2022-07-16T23:09:25.2429+07:00[Asia/Bangkok]","0.0","5.44"
+"Booking","GET - As an Admin I have to be able to get booking by id","SUCCESS","2022-07-16T23:09:30.6931484+07:00[Asia/Bangkok]","0.0","3.27"
+"Booking","PUT - As an Admin I have to be able to accept user's booking","SUCCESS","2022-07-16T23:09:33.9655839+07:00[Asia/Bangkok]","0.0","3.06"
+"Booking","GET - As an Admin I have to able to get booking by user's id","SUCCESS","2022-07-16T23:09:37.0323862+07:00[Asia/Bangkok]","0.0","3.17"

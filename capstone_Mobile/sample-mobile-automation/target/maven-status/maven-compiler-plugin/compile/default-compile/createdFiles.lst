@@ -1,0 +1,12 @@
+com\example\app\pages\RegisterPage.class
+com\example\app\base\BasePageObject$Direction.class
+com\example\app\Calculator.class
+com\example\app\pages\ProfilePage.class
+com\example\app\pages\HomePage.class
+com\example\app\pages\UpdatePasswordPage.class
+com\example\app\pages\SendUsFeedbackPages.class
+com\example\app\drivers\AndroidDriverInit.class
+com\example\app\base\BasePageObject$1.class
+com\example\app\base\BasePageObject.class
+com\example\app\pages\LoginPage.class
+com\example\app\Utils\General.class

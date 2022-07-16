@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"User","GET - As an admin I have to be able to get data users by category","SUCCESS","2022-07-16T23:09:06.9128516+07:00[Asia/Bangkok]","0.0","9.43"
+"User","GET - As an Admin I have to be able to get all users","SUCCESS","2022-07-16T23:09:16.3544975+07:00[Asia/Bangkok]","0.0","1.65"
+"User","GET - As an Admin I have to be able to get an user by id","SUCCESS","2022-07-16T23:09:18.0131269+07:00[Asia/Bangkok]","0.0","2.98"
+"User","POST - As an Admin I have to be able to create new superadmin, admin, and user","SUCCESS","2022-07-16T23:09:21.0015784+07:00[Asia/Bangkok]","0.0","5.14"
+"User","POST - As an Admin I have not to be able to create new superadmin, admin, and user","SUCCESS","2022-07-16T23:09:26.156207+07:00[Asia/Bangkok]","0.0","28.36"
+"User","PUT - Update password user","SUCCESS","2022-07-16T23:09:54.5278875+07:00[Asia/Bangkok]","0.0","4.41"
+"User","PUT - Update user","SUCCESS","2022-07-16T23:09:58.9390532+07:00[Asia/Bangkok]","0.0","11.03"

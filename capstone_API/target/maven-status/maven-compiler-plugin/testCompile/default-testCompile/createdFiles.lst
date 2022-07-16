@@ -1,0 +1,15 @@
+starter\stepdefinitions\UsersSteps.class
+starter\stepdefinitions\BookingSteps.class
+starter\module\classes\Put.class
+starter\module\classes\Get.class
+CucumberTestSuite.class
+starter\module\users\Post.class
+starter\module\booking\Get.class
+Utils\General.class
+starter\module\booking\Post.class
+starter\module\booking\Put.class
+starter\module\classes\Delete.class
+starter\module\users\Put.class
+starter\module\classes\Post.class
+starter\module\users\Get.class
+starter\stepdefinitions\ClassesSteps.class

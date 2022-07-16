@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Requirements</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            var scenarioTable = $('.scenario-result-table').DataTable({
+
+                "order": [],
+                "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                }
+            });
+
+            $('.example-table table').DataTable({
+                searching: false,
+                ordering: false,
+                paging: false,
+                info: false
+            });
+
+            $('.example-table-in-scenario table').DataTable({
+                searching: false,
+                ordering: false,
+                paging: false,
+                info: false
+            });
+
+            $('#evidence-table').DataTable(
+                {
+                    searching: false,
+                    ordering: false,
+                    paging: false,
+                    info: false
+                }
+            );
+
+
+            $(".scenario-docs .card-body table").wrap("<div class='table-responsive'></div>");
+
+            $("#requirements-tabs").tabs();
+            $("#test-tabs").tabs();
+
+            var requirementsTree = [];
+
+            $('#tree').treeview({
+                data: requirementsTree,
+                enableLinks: true,
+                levels:10,
+                showTags: true,
+                expandIcon: "glyphicon glyphicon-folder-close",
+                collapseIcon: "glyphicon glyphicon-folder-open",
+                emptyIcon: "glyphicon glyphicon-book"
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".scenario-docs > div > p").html(function () {
+                var text = $(this).text().trim().split(" ");
+                var first = text.shift();
+                return (text.length > 0 ? "<strong>" + first + "</strong> " : first) + text.join(" ");
+            });
+        });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+            <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
+
+
+
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li >
+            <a href="index.html"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li class="active">
+            <a href="#"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-07-2022 23:09</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="table">
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <!-- Requirements result tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#specs"><i class="fas fa-comments"></i> Specifications</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#results"><i class="fas fa-tachometer-alt"></i> Test Results</a>
+                            </li>
+                        </ul>
+
+                        <!-- Specifications and Results tabs -->
+                        <div class="card border">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div id="specs" class="tab-pane fade in active">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+
+                                                    <h3>Requirements Overview</h3>
+
+                                                    <div id="tree"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="results" class="tab-pane fade">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+
+                                                <div style="width:300px;" class="chart-container automated-and-manual-results">
+                                                    <div class="ct-chart ct-square"></div>
+                                                </div>
+                                                <script>
+
+                                                    var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                    // Our series array that contains series objects or in this case series data arrays
+
+                                                    var series = [{meta: 'Passing tests (automated)', value: 76}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                    // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                    // as you saw in the previous example
+                                                    var options = {
+                                                        width: 350,
+                                                        height: 300
+                                                    };
+
+                                                    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                        new Chartist.Pie('.ct-chart', {
+                                                            series: series,
+                                                            labels: labels,
+                                                        }, {
+                                                            donut: true,
+                                                            donutWidth: 60,
+                                                            donutSolid: true,
+                                                            startAngle: 270,
+                                                            showLabel: true
+                                                        }, options);
+                                                    });
+
+                                                </script>
+                                            </div>
+                                            <div class="col-sm-8">
+
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th scope="col">Scenario Results (including rows of test
+                                                                data)
+                                                            </th>
+                                                            <th scope="col" colspan="2" class="automated-stats">
+                                                                Automated
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                                <td class="aggregate-result-count">
+                                                                    <a href="01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                </td>
+                                                            <td class="automated-stats">76</td>
+                                                            <td class="automated-stats">100%</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-stop-circle-o pending-icon'></i>&nbsp;Pending
+                                                                </td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                </td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-fast-forward skip-icon'></i>&nbsp;Skipped
+                                                                </td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    </td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
+                                                        <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
+                                                        <tr>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-chain-broken compromised-icon'></i>&nbsp;Compromised
+                                                                </td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
+                                                        </tr>
+                                                        <tr class="summary-stats">
+                                                            <td class="aggregate-result-count">Total</td>
+                                                            <td class="automated-stats">76</td>
+                                                            <td class="automated-stats"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Execution Time</th>
+                                                            <th>Clock Time</th>
+                                                            <th>Fastest Test</th>
+                                                            <th>Slowest Test</th>
+                                                            <th>Average Execution Time</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td> 2m 25s</td>
+                                                            <td>52s</td>
+                                                            <td>1s</td>
+                                                            <td>9s</td>
+                                                            <td>7s</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
+
+                                                        <table class="scenario-result-table table"
+                                                               id="scenario-results">
+                                                            <thead>
+                                                            <tr>
+                                                                    <th>Feature</th>
+                                                                <th class="test-name-column">Scenario</th>
+                                                                <th>Steps</th>
+                                                                <th>Started</th>
+                                                                <th>Duration</th>
+                                                                <th>Result</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7fe48403306dad8f04ac521fe7bfde7cd0e14cba6515f5c54bc91228a01ef0ee.html">Booking</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="e7f622a12de0d9dd08fbfa72655704ad6e69009d383718f93e8b816a4ff07281.html">GET - As an Admin I have to be able to get all classes</a>
+                                                                            (1 example)
+                                                                    </td>
+                                                                    <td>5</td>
+                                                                    <td>23:09:06</td>
+                                                                    <td>9s 737ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7fe48403306dad8f04ac521fe7bfde7cd0e14cba6515f5c54bc91228a01ef0ee.html">Booking</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="77bd2c8b9ce8f5234c5bd9e622eb023d4ee2ad368f7918b171a5956b54f49ef9.html">POST - As an Admin I have to be able to create a booking</a>
+                                                                            (5 examples)
+                                                                    </td>
+                                                                    <td>5</td>
+                                                                    <td>23:09:16</td>
+                                                                    <td>8s 722ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7fe48403306dad8f04ac521fe7bfde7cd0e14cba6515f5c54bc91228a01ef0ee.html">Booking</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="9dd7db90d379139dfda1cbecc4f79a6d97c2944bc4729da162ac04f7d8bb827c.html">GET - As an Admin I have to be able to get all booking</a>
+                                                                            (3 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:25</td>
+                                                                    <td>5s 444ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7fe48403306dad8f04ac521fe7bfde7cd0e14cba6515f5c54bc91228a01ef0ee.html">Booking</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="06a5c1235962503b64c834bc31763c6eb2537ffaa66b7b4932c53d61ab93e793.html">GET - As an Admin I have to be able to get booking by id</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:30</td>
+                                                                    <td>3s 266ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7fe48403306dad8f04ac521fe7bfde7cd0e14cba6515f5c54bc91228a01ef0ee.html">Booking</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="a8cc65c384db63f9e89421697f91b859baea9039c1d87bdea69fc827985d682b.html">PUT - As an Admin I have to be able to accept user's booking</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:33</td>
+                                                                    <td>3s 055ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="7fe48403306dad8f04ac521fe7bfde7cd0e14cba6515f5c54bc91228a01ef0ee.html">Booking</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="e44d5bd28ede81a90a97c8ace8ab9e96abd3ba5e17f290b59cfaf4fd157c0dd5.html">GET - As an Admin I have to able to get booking by user's id</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:37</td>
+                                                                    <td>3s 173ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="576308a06c1ebcd3b020d0c7289f1c3446cb48bea36310f9d38ad7529c9f2c3c.html">GET - As an Admin I have to be able to get all classes</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>5</td>
+                                                                    <td>23:09:06</td>
+                                                                    <td>13s 993ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="e42a855bb03c1a9f4da4da33486abecf21fa4f3ada40600a4f24fcc6783e00fa.html">GET- As an Admin I have to be able to get a class by id</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:20</td>
+                                                                    <td>3s 505ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="5905085567611c582ce8a3ba8f88bbe994d158b0de155418c3a9a861448ac659.html">POST - Create a class by category</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:24</td>
+                                                                    <td>3s 541ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="bcf7114939a049d5504f8d327373d4220876774a471cc593b7aafd389979b101.html">POST - Create a class by category negative</a>
+                                                                            (8 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:27</td>
+                                                                    <td>13s 036ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="104b2f37328d5f96015526e1b27ce34047c7d5f54af44e72e6bb61fc5b4e3b3b.html">POST - Create a class by category with null id instructor</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:41</td>
+                                                                    <td>3s 068ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="2b65f23761be1e22e64720a753daf24d0fe0cc921956b351edab0c324478af26.html">DELETE - delete a class by id</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:44</td>
+                                                                    <td>2s 888ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="6c228a4fb9780ef8b15fd83bcd317f06b4cbaafcba4a81b8f0559f75f08a53f5.html">Class</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="e3d14bdf1c8fbacfcdedc42aa31d11bdfc35a350af3d645d9e56be54c0d6175d.html">PUT - update class</a>
+                                                                            (6 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:47</td>
+                                                                    <td>9s 332ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="537cb226d5a84aa765f7a4b018d696ac2dd55fbd16964d887fdd55d0815fd99b.html">GET - As an admin I have to be able to get data users by category</a>
+                                                                            (3 examples)
+                                                                    </td>
+                                                                    <td>5</td>
+                                                                    <td>23:09:06</td>
+                                                                    <td>9s 433ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="66e5673a644139fc3c13677c330c891bb18eb69911de1fdc6c7f9bf0efe4e4a2.html">GET - As an Admin I have to be able to get all users</a>
+                                                                            (1 example)
+                                                                    </td>
+                                                                    <td>5</td>
+                                                                    <td>23:09:16</td>
+                                                                    <td>1s 646ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="29c347a74ea70b93a2798e8c5173709e755cb854fd8cd1967cb395aa0385ed7b.html">GET - As an Admin I have to be able to get an user by id</a>
+                                                                            (2 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:18</td>
+                                                                    <td>2s 981ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="0df8c1c055c55d462ea534bc4a6450262de104a5735f8d5aeb820fb0cfd552b8.html">POST - As an Admin I have to be able to create new superadmin, admin, and user</a>
+                                                                            (3 examples)
+                                                                    </td>
+                                                                    <td>5</td>
+                                                                    <td>23:09:21</td>
+                                                                    <td>5s 143ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="657981f1041f64e59e3eeb7d03535e23205c41a2f4b7d9c9b6d682c4696b18b8.html">POST - As an Admin I have not to be able to create new superadmin, admin, and user</a>
+                                                                            (18 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:26</td>
+                                                                    <td>28s 363ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="a7fb13dfa9bd0f3d8f75f9f01160564a525a5c67e3c7dc9b4c8e887e9c7db6cc.html">PUT - Update password user</a>
+                                                                            (3 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:54</td>
+                                                                    <td>4s 405ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="46d4cf94fe6ccba4640dabdf9078fc3e85b9a5586f48f036acbeb8e17b8515b8.html">User</a>
+                                                                        </td>
+                                                                    <td>
+                                                                            <a href="0d7355d6e00e26bb93c32063b2ca766e54a5463504b530a03e10bee52f74016e.html">PUT - Update user</a>
+                                                                            (7 examples)
+                                                                    </td>
+                                                                    <td>4</td>
+                                                                    <td>23:09:58</td>
+                                                                    <td>11s 033ms</td>
+                                                                    <td>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h3><i class="fas fa-edit"></i> Manual Tests</h3>
+
+                                                        No manual tests were recorded
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="version">Serenity BDD version 2.6.0</span>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

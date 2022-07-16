@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register","Register Scenario","SUCCESS","2022-07-08T20:13:59.5493763+07:00[Asia/Bangkok]","0.0","643.25"
+"Register","Register with remember me","SUCCESS","2022-07-08T20:24:42.8162213+07:00[Asia/Bangkok]","0.0","46.01"
+"Register","Exit register page with inputted data","SUCCESS","2022-07-08T20:25:28.8445137+07:00[Asia/Bangkok]","0.0","85.75"

@@ -1,0 +1,7 @@
+com\example\acceptancetests\AcceptanceTestSuite.class
+com\example\hooks\AndroidDriverHook.class
+com\example\steps\ProfileSteps.class
+com\example\steps\HomeSteps.class
+com\example\steps\LoginSteps.class
+com\example\steps\MathsStepDefinitions.class
+com\example\steps\RegisterSteps.class

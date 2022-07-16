@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Profile Page","Update Password","ERROR","2022-07-08T19:27:43.2188517+07:00[Asia/Bangkok]","0.0","87.85"
+"Register","Register Scenario","ERROR","2022-07-08T19:31:29.5332684+07:00[Asia/Bangkok]","0.0","283.2"
+"Register","Register with remember me","ERROR","2022-07-08T19:36:12.7484226+07:00[Asia/Bangkok]","0.0","57.73"

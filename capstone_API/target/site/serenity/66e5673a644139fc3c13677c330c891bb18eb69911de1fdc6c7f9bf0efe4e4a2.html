@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>GET - As an Admin I have to be able to get all users</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"><!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+        > GET - As an Admin I have to be able to get all users
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-07-2022 23:09</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-comments-o"></i>
+                                        <span class="story-header-title">User</span>
+                                    </h3>
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    GET - As an Admin I have to be able to get all users
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Given I set an endpoint for GET all users "&lt;category&gt;"<br>When I request GET all users "&lt;category&gt;"<br>Then I validate the status code is &lt;status_code&gt;<br>And I validate the result after GET users "&lt;category&gt;"<br>And I get an id for update password</div>
+
+        </div>
+
+    <div id="beforetable"></div>
+
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+                <div class="requirementNarrative"></div>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>Category</th>
+                            <th>Status Code</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">users</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">200</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">
+                    </th>
+                    <th class="step-description-column greentext">
+                        Steps
+                    </th>
+
+                    <th width="130" class="greentext">Outcome</th>
+                    <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                1: GET - As an Admin I have to be able to get all users ({category=users, status_code=200})
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">1s 640ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Given I set an endpoint for GET all users "users"
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">009ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-0" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-0-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                I set an endpoint for GET all users {string}
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-1 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                When I request GET all users "users"
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1s 563ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-1" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-1-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-1-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                I request GET all users {string}
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">1s 560ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-1-0" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="0-1-0-0"></a>
+                                <span style="margin-left: 80px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                I set an endpoint for GET all users {string}
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="0-1-0-1"></a>
+                                <span style="margin-left: 80px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                GET https://capstone-kelompok-3.herokuapp.com/users
+                                        </span>
+                                <span class="evidence">
+                                        <span class="piece-of-evidence">
+                    <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-7">
+                            REST Query
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="rest-query-details">
+                        <div class="collapse multi-collapse" id="restModal-REST-7">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Response</h4>
+                                        <p>URL: https://capstone-kelompok-3.herokuapp.com/users</p>
+                                        <p>Status code: 200</p>
+                                        <p>Content Type: null</p>
+                                        <h4>Request Headers</h4>
+                                        <pre>Accept=*/*</pre>
+                                        <h4>Content Body</h4>
+                                        <pre></pre>
+                                        <h4>Request Cookies</h4>
+                                        <pre></pre>
+                                        <h4>Response Headers</h4>
+                                        <pre>Server: Cowboy<br>Connection: keep-alive<br>Vary: Origin<br>Vary: Access-Control-Request-Method<br>Vary: Access-Control-Request-Headers<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Date: Sat, 16 Jul 2022 16:09:18 GMT<br>Via: 1.1 vegur</pre>
+                                    <h4>Response Body</h4>
+                                        <pre>{<br>    &quot;success&quot;: true,<br>    &quot;message&quot;: &quot;Get All Users&quot;,<br>    &quot;data&quot;: [<br>        {<br>            &quot;id&quot;: 16,<br>            &quot;name&quot;: &quot;test Admin manual API&quot;,<br>            &quot;email&quot;: &quot;testAdminManual@gmail.com&quot;,<br>            &quot;address&quot;: &quot;Jakarta Utara&quot;,<br>            &quot;contact&quot;: &quot;081245987546&quot;,<br>            &quot;username&quot;: &quot;testAdminManual&quot;,<br>            &quot;password&quot;: &quot;superAdmin123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-08T16:04:29.673653Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-08T16:04:29.673689Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 17,<br>            &quot;name&quot;: &quot;test super admin manual api&quot;,<br>            &quot;email&quot;: &quot;superAdminManualTest@gmail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;081245987546&quot;,<br>            &quot;username&quot;: &quot;superAdminManualTest&quot;,<br>            &quot;password&quot;: &quot;iniSuperAdmin&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 1,<br>                &quot;name&quot;: &quot;SuperAdmin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:35Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T16:59:45Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-08T16:05:40.607295Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-08T16:05:40.607312Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 15,<br>            &quot;name&quot;: &quot;jasri silvika&quot;,<br>            &quot;email&quot;: &quot;user@mail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;08111120713&quot;,<br>            &quot;username&quot;: &quot;vikaa66&quot;,<br>            &quot;password&quot;: &quot;Doremi123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-08T13:25:25.673417Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-08T19:00:08.277344Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 84,<br>            &quot;name&quot;: &quot;awang&quot;,<br>            &quot;email&quot;: &quot;jasrivika1r45@gmail.com&quot;,<br>            &quot;address&quot;: &quot;Komplek A&quot;,<br>            &quot;contact&quot;: &quot;089432434535&quot;,<br>            &quot;username&quot;: &quot;awang&quot;,<br>            &quot;password&quot;: &quot;awang&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T07:29:35.174275Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-15T07:29:35.174294Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 90,<br>            &quot;name&quot;: &quot;Tes hardcode&quot;,<br>            &quot;email&quot;: &quot;harcodeeee@gmail.com&quot;,<br>            &quot;address&quot;: &quot;Jl. Hardcode&quot;,<br>            &quot;contact&quot;: &quot;080432897432&quot;,<br>            &quot;username&quot;: &quot;hardcodetes&quot;,<br>            &quot;password&quot;: &quot;Harcodetes123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T08:08:19.443688Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-15T08:08:19.443704Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 91,<br>            &quot;name&quot;: &quot;Prayyy&quot;,<br>            &quot;email&quot;: &quot;tesssss@gmail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;0987987976&quot;,<br>            &quot;username&quot;: &quot;praytes&quot;,<br>            &quot;password&quot;: &quot;Cobates123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T08:24:54.09444Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-15T08:24:54.094446Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 95,<br>            &quot;name&quot;: &quot;NB10ObpXV0&quot;,<br>            &quot;email&quot;: &quot;automationTest136@email.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;087458963214&quot;,<br>            &quot;username&quot;: &quot;automationTest232&quot;,<br>            &quot;password&quot;: &quot;NewPass12&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T18:53:52.105136Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T16:03:03.543009Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 86,<br>            &quot;name&quot;: &quot;ana&quot;,<br>            &quot;email&quot;: &quot;sadmin@gmail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;089432434535&quot;,<br>            &quot;username&quot;: &quot;gg&quot;,<br>            &quot;password&quot;: &quot;newPass123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 1,<br>                &quot;name&quot;: &quot;SuperAdmin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:35Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T16:59:45Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T07:30:03.120727Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:49:54.8815Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 92,<br>            &quot;name&quot;: &quot;v&quot;,<br>            &quot;email&quot;: &quot;sds@gmail.com&quot;,<br>            &quot;address&quot;: &quot;va&quot;,<br>            &quot;contact&quot;: &quot;08128989219&quot;,<br>            &quot;username&quot;: &quot;vhv&quot;,<br>            &quot;password&quot;: &quot;dsdasasA%5&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T10:26:27.200466Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-15T10:26:27.200473Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 93,<br>            &quot;name&quot;: &quot;New Admin&quot;,<br>            &quot;email&quot;: &quot;newadm@gmail.com&quot;,<br>            &quot;address&quot;: &quot;New Admins&quot;,<br>            &quot;contact&quot;: &quot;08637218213&quot;,<br>            &quot;username&quot;: &quot;newadm&quot;,<br>            &quot;password&quot;: &quot;NewADM123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T10:44:16.338591Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-15T10:44:16.338598Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 94,<br>            &quot;name&quot;: &quot;AdminManual&quot;,<br>            &quot;email&quot;: &quot;admin@yahoo.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;081254698745&quot;,<br>            &quot;username&quot;: &quot;admin123&quot;,<br>            &quot;password&quot;: &quot;Doremi123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T15:28:12.650122Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-15T15:28:12.650152Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 5,<br>            &quot;name&quot;: &quot;jasri vika&quot;,<br>            &quot;email&quot;: &quot;&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;084569872136&quot;,<br>            &quot;username&quot;: &quot;testabcd&quot;,<br>            &quot;password&quot;: &quot;Test123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T04:51:20.693817Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T13:08:19.360078Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 97,<br>            &quot;name&quot;: &quot;s8NhPfjzAs&quot;,<br>            &quot;email&quot;: &quot;testuser123@email.com&quot;,<br>            &quot;address&quot;: &quot;Bogor&quot;,<br>            &quot;contact&quot;: &quot;081211229988&quot;,<br>            &quot;username&quot;: &quot;testuser800&quot;,<br>            &quot;password&quot;: &quot;Doremi456&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T13:41:56.64074Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T13:41:56.64075Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 88,<br>            &quot;name&quot;: &quot;Vika 123&quot;,<br>            &quot;email&quot;: &quot;testAdminManual4444@gmail.com&quot;,<br>            &quot;address&quot;: &quot;Jakarta Utara&quot;,<br>            &quot;contact&quot;: &quot;081245987546&quot;,<br>            &quot;username&quot;: &quot;testAdminManual&quot;,<br>            &quot;password&quot;: &quot;passBaru569&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T07:37:36.042395Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:26:58.501862Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 8,<br>            &quot;name&quot;: &quot;ulbXeatbjt&quot;,<br>            &quot;email&quot;: &quot;testuser96@email.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: null,<br>            &quot;username&quot;: &quot;testuser650&quot;,<br>            &quot;password&quot;: &quot;newPass123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T05:40:18.040559Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:33:44.109719Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 98,<br>            &quot;name&quot;: &quot;AbdullahNS&quot;,<br>            &quot;email&quot;: &quot;abdullah.nouval@gmail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;087823232237&quot;,<br>            &quot;username&quot;: &quot;AbdullahNS&quot;,<br>            &quot;password&quot;: &quot;Test1234&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T13:58:37.582835Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T13:58:37.58285Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 99,<br>            &quot;name&quot;: &quot;6uWffyoQXn&quot;,<br>            &quot;email&quot;: &quot;testuser713@email.com&quot;,<br>            &quot;address&quot;: &quot;Bali&quot;,<br>            &quot;contact&quot;: &quot;101147859632&quot;,<br>            &quot;username&quot;: &quot;testuser372&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T14:07:15.233854Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T14:07:15.233893Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 100,<br>            &quot;name&quot;: &quot;prMXHle8rm&quot;,<br>            &quot;email&quot;: &quot;testuser450@email.com&quot;,<br>            &quot;address&quot;: &quot;Bali&quot;,<br>            &quot;contact&quot;: &quot;101147859632&quot;,<br>            &quot;username&quot;: &quot;testuser424&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T14:17:43.415748Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T14:17:43.415766Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 6,<br>            &quot;name&quot;: &quot;jasri silvika&quot;,<br>            &quot;email&quot;: &quot;jasrivika@yahoo.com&quot;,<br>            &quot;address&quot;: &quot;Bogor&quot;,<br>            &quot;contact&quot;: &quot;08111120713&quot;,<br>            &quot;username&quot;: &quot;aveeka&quot;,<br>            &quot;password&quot;: &quot;Edit100&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T05:38:03.731037Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-07T07:57:05.760601Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 10,<br>            &quot;name&quot;: &quot;jasri silvika&quot;,<br>            &quot;email&quot;: &quot;testuserlagi@yahoo.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;08111120713&quot;,<br>            &quot;username&quot;: &quot;aveeka&quot;,<br>            &quot;password&quot;: &quot;Pas12TpO&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T15:48:28.985772Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-07T15:55:01.367316Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 9,<br>            &quot;name&quot;: &quot;jasri silvika&quot;,<br>            &quot;email&quot;: &quot;vika@yahoo.com&quot;,<br>            &quot;address&quot;: &quot;Bogor&quot;,<br>            &quot;contact&quot;: &quot;08111120713&quot;,<br>            &quot;username&quot;: &quot;aveeka&quot;,<br>            &quot;password&quot;: &quot;Test123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T09:45:00.811995Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-07T16:41:06.096615Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 2,<br>            &quot;name&quot;: &quot;jasri silvika&quot;,<br>            &quot;email&quot;: &quot;test@yahoo.com&quot;,<br>            &quot;address&quot;: &quot;Bogor&quot;,<br>            &quot;contact&quot;: &quot;08111120713&quot;,<br>            &quot;username&quot;: &quot;vikaa66&quot;,<br>            &quot;password&quot;: &quot;Doremi123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-05T10:10:56.425555Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-08T08:27:24.543596Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 14,<br>            &quot;name&quot;: &quot;userstesting454&quot;,<br>            &quot;email&quot;: &quot;userstesting156@email.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;081288441122&quot;,<br>            &quot;username&quot;: &quot;userstesting454&quot;,<br>            &quot;password&quot;: &quot;Test123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-08T13:14:53.350361Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-08T13:14:53.350386Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 3,<br>            &quot;name&quot;: &quot;Fb8jnya0BY&quot;,<br>            &quot;email&quot;: &quot;jasrivika1307@gmail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;087458963214&quot;,<br>            &quot;username&quot;: &quot;testuser433&quot;,<br>            &quot;password&quot;: &quot;NewPass12&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-05T10:21:38.835014Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:50:06.545776Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 104,<br>            &quot;name&quot;: &quot;ojdkYJrJcX&quot;,<br>            &quot;email&quot;: &quot;testuser254@email.com&quot;,<br>            &quot;address&quot;: &quot;Jakarta&quot;,<br>            &quot;contact&quot;: &quot;081211229988&quot;,<br>            &quot;username&quot;: &quot;testuser31&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 1,<br>                &quot;name&quot;: &quot;SuperAdmin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:35Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T16:59:45Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T15:41:38.696168Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:41:38.696184Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 105,<br>            &quot;name&quot;: &quot;u4tHAEPvLp&quot;,<br>            &quot;email&quot;: &quot;testuser965@email.com&quot;,<br>            &quot;address&quot;: &quot;Bandung&quot;,<br>            &quot;contact&quot;: &quot;081241526987&quot;,<br>            &quot;username&quot;: &quot;testuser58&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T15:41:42.030349Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:41:42.030365Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 106,<br>            &quot;name&quot;: &quot;9jJEqTxF1G&quot;,<br>            &quot;email&quot;: &quot;testuser151@email.com&quot;,<br>            &quot;address&quot;: &quot;Bali&quot;,<br>            &quot;contact&quot;: &quot;101147859632&quot;,<br>            &quot;username&quot;: &quot;testuser814&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T15:41:44.023347Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:41:44.023359Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 85,<br>            &quot;name&quot;: &quot;awang Admin&quot;,<br>            &quot;email&quot;: &quot;awang6@email.com&quot;,<br>            &quot;address&quot;: &quot;komplek b&quot;,<br>            &quot;contact&quot;: &quot;089432434535&quot;,<br>            &quot;username&quot;: &quot;awangAdmin&quot;,<br>            &quot;password&quot;: &quot;newPass123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T07:29:50.320463Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:41:46.361842Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 89,<br>            &quot;name&quot;: &quot;GHhCj2enWP&quot;,<br>            &quot;email&quot;: &quot;testuser103@email.com&quot;,<br>            &quot;address&quot;: &quot;Bogor&quot;,<br>            &quot;contact&quot;: &quot;087458963214&quot;,<br>            &quot;username&quot;: &quot;testuser518&quot;,<br>            &quot;password&quot;: &quot;NewPass12&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T07:37:51.436537Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:41:51.947819Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 107,<br>            &quot;name&quot;: &quot;c6hzqs2cZq&quot;,<br>            &quot;email&quot;: &quot;testuser924@email.com&quot;,<br>            &quot;address&quot;: &quot;Jakarta&quot;,<br>            &quot;contact&quot;: &quot;081211229988&quot;,<br>            &quot;username&quot;: &quot;testuser356&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 1,<br>                &quot;name&quot;: &quot;SuperAdmin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:35Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T16:59:45Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T15:49:22.267518Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:49:22.267531Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 109,<br>            &quot;name&quot;: &quot;EWomSjFnOl&quot;,<br>            &quot;email&quot;: &quot;testuser391@email.com&quot;,<br>            &quot;address&quot;: &quot;Bali&quot;,<br>            &quot;contact&quot;: &quot;101147859632&quot;,<br>            &quot;username&quot;: &quot;testuser109&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T15:49:25.555035Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T15:49:25.555052Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 4,<br>            &quot;name&quot;: &quot;szL7JBgZV6&quot;,<br>            &quot;email&quot;: &quot;testuser117@email.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: null,<br>            &quot;username&quot;: &quot;testuser403&quot;,<br>            &quot;password&quot;: &quot;NewPass12&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T01:14:07.938063Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-12T17:26:01.295955Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 113,<br>            &quot;name&quot;: &quot;OYg69fH4qb&quot;,<br>            &quot;email&quot;: &quot;automationTest578@email.com&quot;,<br>            &quot;address&quot;: &quot;Jakarta&quot;,<br>            &quot;contact&quot;: &quot;081211229988&quot;,<br>            &quot;username&quot;: &quot;automationTest887&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 1,<br>                &quot;name&quot;: &quot;SuperAdmin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:35Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T16:59:45Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T16:02:19.886506Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T16:02:19.886517Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 114,<br>            &quot;name&quot;: &quot;SAVwWMsd8l&quot;,<br>            &quot;email&quot;: &quot;automationTest498@email.com&quot;,<br>            &quot;address&quot;: &quot;Bandung&quot;,<br>            &quot;contact&quot;: &quot;081241526987&quot;,<br>            &quot;username&quot;: &quot;automationTest9&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 2,<br>                &quot;name&quot;: &quot;Admin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:55Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:06Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T16:02:21.593492Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T16:02:21.593502Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 115,<br>            &quot;name&quot;: &quot;vAiJZT0FnB&quot;,<br>            &quot;email&quot;: &quot;automationTest218@email.com&quot;,<br>            &quot;address&quot;: &quot;Bali&quot;,<br>            &quot;contact&quot;: &quot;101147859632&quot;,<br>            &quot;username&quot;: &quot;automationTest327&quot;,<br>            &quot;password&quot;: &quot;Doremi@123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-16T16:02:23.30384Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T16:02:23.303857Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 87,<br>            &quot;name&quot;: &quot;testspradmin&quot;,<br>            &quot;email&quot;: &quot;superAdmin79@gmail.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: &quot;081245987546&quot;,<br>            &quot;username&quot;: &quot;superadmin11&quot;,<br>            &quot;password&quot;: &quot;newPass123&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 1,<br>                &quot;name&quot;: &quot;SuperAdmin&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T16:59:35Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T16:59:45Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-15T07:35:29.612257Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-16T16:02:52.003535Z&quot;<br>        },<br>        {<br>            &quot;id&quot;: 7,<br>            &quot;name&quot;: &quot;yX3gNXHEAf&quot;,<br>            &quot;email&quot;: &quot;testuser908@email.com&quot;,<br>            &quot;address&quot;: null,<br>            &quot;contact&quot;: null,<br>            &quot;username&quot;: &quot;testuser876&quot;,<br>            &quot;password&quot;: &quot;NewPass12&quot;,<br>            &quot;role&quot;: {<br>                &quot;id&quot;: 3,<br>                &quot;name&quot;: &quot;User&quot;,<br>                &quot;createdAt&quot;: &quot;2022-07-05T17:00:16Z&quot;,<br>                &quot;updatedAt&quot;: &quot;2022-07-05T17:00:23Z&quot;<br>            },<br>            &quot;createdAt&quot;: &quot;2022-07-06T05:38:20.672417Z&quot;,<br>            &quot;updatedAt&quot;: &quot;2022-07-12T17:31:50.259603Z&quot;<br>        }<br>    ]<br>}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-2"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-2 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Then I validate the status code is 200
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">005ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-2" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-2-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                I validate the status code is {int}
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">001ms</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-3"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-3 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                And I validate the result after GET users "users"
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">032ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-3" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-3-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                I validate the result after GET users {string}
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">029ms</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="0-4"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0-4 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                And I get an id for update password
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">019ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection0-4" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="0-4-0"></a>
+                                <span style="margin-left: 60px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                I get an id for update password
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">018ms</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                <tr class="test-SUCCESS">
+                        <td colspan="2"></td>
+                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>1.65s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div id="beforefooter"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="version">Serenity BDD version 2.6.0</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            } else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+                src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Class","GET - As an Admin I have to be able to get all classes","SUCCESS","2022-07-16T23:09:06.9307652+07:00[Asia/Bangkok]","0.0","13.99"
+"Class","GET- As an Admin I have to be able to get a class by id","SUCCESS","2022-07-16T23:09:20.931773+07:00[Asia/Bangkok]","0.0","3.51"
+"Class","POST - Create a class by category","SUCCESS","2022-07-16T23:09:24.4462067+07:00[Asia/Bangkok]","0.0","3.54"
+"Class","POST - Create a class by category negative","SUCCESS","2022-07-16T23:09:27.9948062+07:00[Asia/Bangkok]","0.0","13.04"
+"Class","POST - Create a class by category with null id instructor","SUCCESS","2022-07-16T23:09:41.0420716+07:00[Asia/Bangkok]","0.0","3.07"
+"Class","DELETE - delete a class by id","SUCCESS","2022-07-16T23:09:44.116645+07:00[Asia/Bangkok]","0.0","2.89"
+"Class","PUT - update class","SUCCESS","2022-07-16T23:09:47.0155916+07:00[Asia/Bangkok]","0.0","9.33"
