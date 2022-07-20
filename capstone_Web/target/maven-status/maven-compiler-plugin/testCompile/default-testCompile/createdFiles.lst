@@ -1,0 +1,14 @@
+starter\pages\ManageOfflineClassPage.class
+starter\stepdefinitions\ManageOnlineClassSteps.class
+starter\stepdefinitions\ManageAdminSteps.class
+starter\pages\ManageOnlineClassPage.class
+starter\pages\ManageMembershipPage.class
+CucumberTestSuite.class
+starter\stepdefinitions\ManageMembershipSteps.class
+starter\stepdefinitions\ManageOfflineBookingSteps.class
+starter\stepdefinitions\ManageOfflineClassSteps.class
+Utils\General.class
+starter\pages\ManageOfflineBookingPage.class
+starter\stepdefinitions\LoginSteps.class
+starter\pages\LoginPage.class
+starter\pages\ManageAdminPage.class

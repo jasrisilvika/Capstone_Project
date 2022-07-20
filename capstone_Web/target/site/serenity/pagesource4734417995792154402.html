@@ -1,0 +1,322 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;style rc-util-key="@ant-design-icons"&gt;<br/>
+.anticon {<br/>
+  display: inline-block;<br/>
+  color: inherit;<br/>
+  font-style: normal;<br/>
+  line-height: 0;<br/>
+  text-align: center;<br/>
+  text-transform: none;<br/>
+  vertical-align: -0.125em;<br/>
+  text-rendering: optimizeLegibility;<br/>
+  -webkit-font-smoothing: antialiased;<br/>
+  -moz-osx-font-smoothing: grayscale;<br/>
+}<br/>
+<br/>
+.anticon &gt; * {<br/>
+  line-height: 1;<br/>
+}<br/>
+<br/>
+.anticon svg {<br/>
+  display: inline-block;<br/>
+}<br/>
+<br/>
+.anticon::before {<br/>
+  display: none;<br/>
+}<br/>
+<br/>
+.anticon .anticon-icon {<br/>
+  display: block;<br/>
+}<br/>
+<br/>
+.anticon[tabindex] {<br/>
+  cursor: pointer;<br/>
+}<br/>
+<br/>
+.anticon-spin::before,<br/>
+.anticon-spin {<br/>
+  display: inline-block;<br/>
+  -webkit-animation: loadingCircle 1s infinite linear;<br/>
+  animation: loadingCircle 1s infinite linear;<br/>
+}<br/>
+<br/>
+@-webkit-keyframes loadingCircle {<br/>
+  100% {<br/>
+    -webkit-transform: rotate(360deg);<br/>
+    transform: rotate(360deg);<br/>
+  }<br/>
+}<br/>
+<br/>
+@keyframes loadingCircle {<br/>
+  100% {<br/>
+    -webkit-transform: rotate(360deg);<br/>
+    transform: rotate(360deg);<br/>
+  }<br/>
+}<br/>
+&lt;/style&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;link rel="icon" href="/favicon.ico"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;<br/>
+  &lt;meta name="theme-color" content="#000000"&gt;<br/>
+  &lt;meta name="description" content="Web site created using create-react-app"&gt;<br/>
+  &lt;link rel="apple-touch-icon" href="/logo192.png"&gt;<br/>
+  &lt;link rel="manifest" href="/manifest.json"&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br/>
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"&gt;<br/>
+  &lt;link rel="stylesheet" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"&gt;<br/>
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"&gt;<br/>
+  &lt;title&gt;A-A Gym&lt;/title&gt;<br/>
+  &lt;script defer src="/static/js/main.40ed83f7.js"&gt;&lt;/script&gt;<br/>
+  &lt;link href="/static/css/main.033509b3.css" rel="stylesheet"&gt;<br/>
+  &lt;style rc-util-key="-ant-1657791994366-0.31415442665091686-dynamic-theme"&gt;:root {<br/>
+    --ant-primary-color: rgb(242, 115, 112);<br/>
+--ant-primary-color-disabled: #fff2f0;<br/>
+--ant-primary-color-hover: #ffa39e;<br/>
+--ant-primary-color-active: #a63c41;<br/>
+--ant-primary-color-outline: rgba(242, 115, 112, 0.2);<br/>
+--ant-primary-color-deprecated-bg: #fff2f0;<br/>
+--ant-primary-color-deprecated-border: #ffccc7;<br/>
+--ant-primary-1: #fff3f0;<br/>
+--ant-primary-2: #fff2f0;<br/>
+--ant-primary-3: #fff1f0;<br/>
+--ant-primary-4: #ffccc7;<br/>
+--ant-primary-5: #ffa39e;<br/>
+--ant-primary-6: #f27370;<br/>
+--ant-primary-7: #cc5456;<br/>
+--ant-primary-8: #a63c41;<br/>
+--ant-primary-9: #80282f;<br/>
+--ant-primary-10: #591b22;<br/>
+--ant-primary-color-deprecated-l-35: rgb(255, 255, 255);<br/>
+--ant-primary-color-deprecated-l-20: rgb(250, 207, 205);<br/>
+--ant-primary-color-deprecated-t-20: rgb(245, 143, 141);<br/>
+--ant-primary-color-deprecated-t-50: rgb(249, 185, 184);<br/>
+--ant-primary-color-deprecated-f-12: rgba(242, 115, 112, 0.12);<br/>
+--ant-primary-color-active-deprecated-f-30: rgba(255, 243, 240, 0.3);<br/>
+--ant-primary-color-active-deprecated-d-02: rgb(255, 235, 230);<br/>
+  }&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body class="ant-scrolling-effect" style="width: calc(100% - 17px); overflow: hidden;"&gt;<br/>
+  &lt;noscript&gt;<br/>
+   You need to enable JavaScript to run this app.<br/>
+  &lt;/noscript&gt;<br/>
+  &lt;div id="root"&gt;<br/>
+   &lt;div style="position: absolute;"&gt;<br/>
+    &lt;div style="position: absolute; margin-left: 1186px; margin-top: 82px; float: right; color: black; display: flex;"&gt;<br/>
+     &lt;div style="display: flex; flex-direction: row; width: 300px;"&gt;<br/>
+      &lt;img alt="avatar" src="/static/media/avatar.2e0d65760bbdc89a0a40ed69d2c028c8.svg" style="width: 40px; height: 40px;"&gt;<br/>
+      &lt;h1 style="margin-left: 20px; font-size: 24px;"&gt;Super Admin&lt;/h1&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div style="height: 1124px; width: 400px; background-color: rgb(242, 115, 112); padding-top: 227px; padding-left: 60px; padding-right: 60px;"&gt;<br/>
+     &lt;img alt="Logo" src="/static/media/logo.c73446595d97a258c5dd08c9cdf3dbd7.svg" style="width: 243px; height: 65px; margin-bottom: 45px;"&gt;<br/>
+     &lt;ul class="SidebarList"&gt;<br/>
+      &lt;li class="row"&gt; <br/>
+       &lt;div&gt;<br/>
+        Home<br/>
+       &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;li class="row"&gt; <br/>
+       &lt;div&gt;<br/>
+        Manage Admin<br/>
+       &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;li class="row"&gt; <br/>
+       &lt;div&gt;<br/>
+        Manage Membership<br/>
+       &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;li class="row"&gt; <br/>
+       &lt;div&gt;<br/>
+        Manage Offline Class<br/>
+       &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;li class="row" style="height: 43px; width: 100%; border-bottom: 1px solid white; padding-bottom: 60px; display: flex; flex-direction: row; color: white; font-size: 20px; cursor: pointer;"&gt;Manage Offline Class Booking&lt;/li&gt;<br/>
+      &lt;li class="row" style="width: 100%; border-bottom: 1px solid white; display: flex; flex-direction: row; color: white; font-size: 20px; cursor: pointer;"&gt;Manage Online Class&lt;/li&gt;<br/>
+      &lt;li class="row" style="height: 43px; width: 100%; padding-bottom: 60px; display: flex; flex-direction: row; color: white; font-size: 20px; cursor: pointer;"&gt;Manage Online Class Booking&lt;/li&gt;<br/>
+      &lt;li class="row" style="height: 43px; width: 100%; border-bottom: 1px solid white; margin-top: 200px; display: flex; flex-direction: row; color: white; font-size: 20px; cursor: pointer;"&gt;Logout&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div style="margin-left: 400px; min-width: 1046px; padding-left: 62px; padding-right: 60px; padding-top: 170px;"&gt;<br/>
+    &lt;h1 style="font-size: 2rem;"&gt;Manage Admin&lt;/h1&gt;<br/>
+    &lt;div style="border: 1px solid rgb(242, 115, 112); padding-left: 23px; padding-right: 23px;"&gt;<br/>
+     &lt;div style="display: flex; padding-right: 44.5px; padding-top: 25px;"&gt;<br/>
+      &lt;h1 style="font-size: 2rem;"&gt;List Admin&lt;/h1&gt;&lt;button id="btn-add-admin" type="button" class="ant-btn ant-btn-default" style="background-color: rgb(242, 115, 112); color: white; border: 1px solid rgb(242, 115, 112); border-radius: 4px; margin-left: auto;"&gt;&lt;span&gt;+ NEW&lt;/span&gt;&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="ant-table-wrapper" style="margin: 0px; font-family: Inter;"&gt;<br/>
+      &lt;div class="ant-spin-nested-loading"&gt;<br/>
+       &lt;div class="ant-spin-container"&gt;<br/>
+        &lt;div class="ant-table"&gt;<br/>
+         &lt;div class="ant-table-container"&gt;<br/>
+          &lt;div class="ant-table-content"&gt;<br/>
+           &lt;table style="table-layout: auto;"&gt;<br/>
+            &lt;colgroup&gt;&lt;/colgroup&gt;<br/>
+            &lt;thead class="ant-table-thead"&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;th class="ant-table-cell"&gt;Name&lt;/th&gt;<br/>
+              &lt;th class="ant-table-cell"&gt;Username&lt;/th&gt;<br/>
+              &lt;th class="ant-table-cell"&gt;Password&lt;/th&gt;<br/>
+              &lt;th class="ant-table-cell"&gt;Actions&lt;/th&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/thead&gt;<br/>
+            &lt;tbody class="ant-table-tbody"&gt;<br/>
+             &lt;tr class="ant-table-row ant-table-row-level-0"&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;John&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;John55&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;dicoba12&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;&lt;button id="btn-view-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112);"&gt;&lt;span&gt;VIEW&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-edit-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;EDIT&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-delete-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;DELETE&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr class="ant-table-row ant-table-row-level-0"&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;David&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;David55&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;dicoba1245&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;&lt;button id="btn-view-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112);"&gt;&lt;span&gt;VIEW&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-edit-admin" type="button" class="ant-btn ant-btn-default" ant-click-animating-without-extra-node="false" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;EDIT&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-delete-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;DELETE&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr class="ant-table-row ant-table-row-level-0"&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;James&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;James232&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;dicoba1276&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;&lt;button id="btn-view-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112);"&gt;&lt;span&gt;VIEW&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-edit-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;EDIT&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-delete-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;DELETE&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr class="ant-table-row ant-table-row-level-0"&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;Sam&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;Sam445&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;dicoba1254&lt;/td&gt;<br/>
+              &lt;td class="ant-table-cell"&gt;&lt;button id="btn-view-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112);"&gt;&lt;span&gt;VIEW&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-edit-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;EDIT&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-delete-admin" type="button" class="ant-btn ant-btn-default" style="border: 1px solid rgb(242, 115, 112); border-radius: 4px; color: white; background-color: rgb(242, 115, 112); margin-left: 12px;"&gt;&lt;span&gt;DELETE&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;ul class="ant-pagination ant-table-pagination ant-table-pagination-right" unselectable="unselectable"&gt;<br/>
+         &lt;li title="Previous Page" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true"&gt;&lt;button class="ant-pagination-item-link" type="button" tabindex="-1" disabled&gt;&lt;span role="img" aria-label="left" class="anticon anticon-left"&gt;<br/>
+            &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+             &lt;path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+         &lt;li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0"&gt;&lt;a rel="nofollow"&gt;1&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li title="Next Page" class="ant-pagination-next ant-pagination-disabled" aria-disabled="true"&gt;&lt;button class="ant-pagination-item-link" type="button" tabindex="-1" disabled&gt;&lt;span role="img" aria-label="right" class="anticon anticon-right"&gt;<br/>
+            &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+             &lt;path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"&gt;&lt;/path&gt;<br/>
+            &lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div&gt;<br/>
+   &lt;div class="ant-modal-root"&gt;<br/>
+    &lt;div class="ant-modal-mask"&gt;&lt;/div&gt;<br/>
+    &lt;div tabindex="-1" class="ant-modal-wrap"&gt;<br/>
+     &lt;div role="dialog" aria-modal="true" class="ant-modal" style="width: 520px; transform-origin: 603.4px 377px;"&gt;<br/>
+      &lt;div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"&gt;&lt;/div&gt;<br/>
+      &lt;div class="ant-modal-content"&gt;<br/>
+       &lt;button type="button" aria-label="Close" class="ant-modal-close"&gt;&lt;span class="ant-modal-close-x"&gt;&lt;span role="img" aria-label="close" class="anticon anticon-close ant-modal-close-icon"&gt;<br/>
+          &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+           &lt;path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"&gt;&lt;/path&gt;<br/>
+          &lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+       &lt;div class="ant-modal-body"&gt;<br/>
+        &lt;h1 style="font-size: 32px; font-weight: bold;"&gt;Edit Admin&lt;/h1&gt;<br/>
+        &lt;form autocomplete="off" class="ant-form ant-form-horizontal" style="width: 100%;"&gt;<br/>
+         &lt;div style="font-size: 20px; margin-bottom: 5px;"&gt;<br/>
+          Name Admin<br/>
+         &lt;/div&gt;<br/>
+         &lt;img src="/static/media/fld-name.3cf79d079b982dd1bfb2f865604dda79.svg" alt="name" style="position: absolute; z-index: 900; padding: 15px 0px 18.5px 17.5px;"&gt;<br/>
+         &lt;div class="ant-row ant-form-item ant-form-item-has-feedback ant-form-item-has-success"&gt;<br/>
+          &lt;div class="ant-col ant-form-item-control"&gt;<br/>
+           &lt;div class="ant-form-item-control-input"&gt;<br/>
+            &lt;div class="ant-form-item-control-input-content"&gt;<br/>
+             &lt;span class="ant-input-affix-wrapper ant-input-affix-wrapper-status-success ant-input-affix-wrapper-has-feedback" style="border: 1px solid rgb(112, 112, 112); padding: 10px 35px; border-radius: 4px; color: rgb(112, 112, 112);"&gt;&lt;input id="fld-name-edit-admin" placeholder="Enter Your Name" class="ant-input" type="text" value="RQSVwYwQ"&gt;&lt;span class="ant-input-suffix"&gt;&lt;span class="ant-form-item-feedback-icon ant-form-item-feedback-icon-success"&gt;&lt;span role="img" aria-label="check-circle" class="anticon anticon-check-circle"&gt;<br/>
+                 &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="check-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+                  &lt;path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"&gt;&lt;/path&gt;<br/>
+                 &lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div style="font-size: 20px; margin-bottom: 5px;"&gt;<br/>
+          Username<br/>
+         &lt;/div&gt;<br/>
+         &lt;img src="/static/media/fld-name.3cf79d079b982dd1bfb2f865604dda79.svg" alt="username" style="position: absolute; z-index: 900; padding: 15px 0px 18.5px 17.5px;"&gt;<br/>
+         &lt;div class="ant-row ant-form-item ant-form-item-has-feedback ant-form-item-has-success"&gt;<br/>
+          &lt;div class="ant-col ant-form-item-control"&gt;<br/>
+           &lt;div class="ant-form-item-control-input"&gt;<br/>
+            &lt;div class="ant-form-item-control-input-content"&gt;<br/>
+             &lt;span class="ant-input-affix-wrapper ant-input-affix-wrapper-status-success ant-input-affix-wrapper-has-feedback" style="border: 1px solid rgb(112, 112, 112); padding: 10px 35px; border-radius: 4px; color: rgb(112, 112, 112);"&gt;&lt;input id="fld-username-edit-admin" placeholder="Enter Your Username" class="ant-input" type="text" value="admin225"&gt;&lt;span class="ant-input-suffix"&gt;&lt;span class="ant-form-item-feedback-icon ant-form-item-feedback-icon-success"&gt;&lt;span role="img" aria-label="check-circle" class="anticon anticon-check-circle"&gt;<br/>
+                 &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="check-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+                  &lt;path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"&gt;&lt;/path&gt;<br/>
+                 &lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div style="font-size: 20px; margin-bottom: 5px;"&gt;<br/>
+          Password<br/>
+         &lt;/div&gt;<br/>
+         &lt;img src="/static/media/fld-password.ffd60973ddad30becfc6567c6f8e46d7.svg" alt="password" style="position: absolute; z-index: 900; padding: 15px 0px 18.5px 17.5px;"&gt;<br/>
+         &lt;div class="ant-row ant-form-item ant-form-item-with-help ant-form-item-has-error"&gt;<br/>
+          &lt;div class="ant-col ant-form-item-control"&gt;<br/>
+           &lt;div class="ant-form-item-control-input"&gt;<br/>
+            &lt;div class="ant-form-item-control-input-content"&gt;<br/>
+             &lt;input id="fld-password-edit-admin" placeholder="Enter Your Password" class="ant-input ant-input-status-error" type="text" value="admin123" style="border: 1px solid rgb(112, 112, 112); padding: 10px 35px; border-radius: 4px; color: rgb(112, 112, 112);"&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="ant-form-item-explain ant-form-item-explain-connected"&gt;<br/>
+            &lt;div role="alert" class="ant-form-item-explain-error" style=""&gt;<br/>
+             &lt;ul&gt;<br/>
+              &lt;li&gt;- At least 8 characters&lt;/li&gt;<br/>
+              &lt;li&gt;- At least 1 numeric character&lt;/li&gt;<br/>
+              &lt;li&gt;- At least 1 lowercase character&lt;/li&gt;<br/>
+              &lt;li&gt;- At least 1 uppercase character&lt;/li&gt;<br/>
+              &lt;li&gt;- At least 1 special character&lt;/li&gt;<br/>
+             &lt;/ul&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div style="font-size: 20px; margin-bottom: 5px;"&gt;<br/>
+          Email<br/>
+         &lt;/div&gt;<br/>
+         &lt;img src="/static/media/fld-email.288c99c8b718eb9ee530179fb3d74425.svg" alt="email" style="position: absolute; z-index: 900; padding: 15px 0px 18.5px 17.5px;"&gt;<br/>
+         &lt;div class="ant-row ant-form-item ant-form-item-has-feedback ant-form-item-has-success"&gt;<br/>
+          &lt;div class="ant-col ant-form-item-control"&gt;<br/>
+           &lt;div class="ant-form-item-control-input"&gt;<br/>
+            &lt;div class="ant-form-item-control-input-content"&gt;<br/>
+             &lt;span class="ant-input-affix-wrapper ant-input-affix-wrapper-status-success ant-input-affix-wrapper-has-feedback" style="border: 1px solid rgb(112, 112, 112); padding: 10px 35px; border-radius: 4px; color: rgb(112, 112, 112);"&gt;&lt;input id="fld-email-edit-admin" placeholder="@gmail.com" class="ant-input" type="text" value="admin517@email.com"&gt;&lt;span class="ant-input-suffix"&gt;&lt;span class="ant-form-item-feedback-icon ant-form-item-feedback-icon-success"&gt;&lt;span role="img" aria-label="check-circle" class="anticon anticon-check-circle"&gt;<br/>
+                 &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="check-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+                  &lt;path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"&gt;&lt;/path&gt;<br/>
+                 &lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div style="font-size: 20px; margin-bottom: 5px;"&gt;<br/>
+          Phone Number<br/>
+         &lt;/div&gt;<br/>
+         &lt;img src="/static/media/fld-phone.6f641d5e968fe2623eb657512c97e930.svg" alt="phone" style="position: absolute; z-index: 900; padding: 15px 0px 18.5px 17.5px;"&gt;<br/>
+         &lt;div class="ant-row ant-form-item ant-form-item-has-feedback ant-form-item-has-success"&gt;<br/>
+          &lt;div class="ant-col ant-form-item-control"&gt;<br/>
+           &lt;div class="ant-form-item-control-input"&gt;<br/>
+            &lt;div class="ant-form-item-control-input-content"&gt;<br/>
+             &lt;span class="ant-input-affix-wrapper ant-input-affix-wrapper-status-success ant-input-affix-wrapper-has-feedback" style="border: 1px solid rgb(112, 112, 112); padding: 10px 35px; border-radius: 4px; color: rgb(112, 112, 112);"&gt;&lt;input id="fld-phone-number-edit-admin" placeholder="Enter Your Phone Number" class="ant-input" type="text" value="084596324785"&gt;&lt;span class="ant-input-suffix"&gt;&lt;span class="ant-form-item-feedback-icon ant-form-item-feedback-icon-success"&gt;&lt;span role="img" aria-label="check-circle" class="anticon anticon-check-circle"&gt;<br/>
+                 &lt;svg viewbox="64 64 896 896" focusable="false" data-icon="check-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"&gt;<br/>
+                  &lt;path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"&gt;&lt;/path&gt;<br/>
+                 &lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div style="display: flex; flex-direction: column;"&gt;<br/>
+          &lt;button id="btn-save-edit-admin" type="submit" class="ant-btn ant-btn-primary" style="width: 100%; margin-bottom: 15px; border-radius: 8px; font-size: 16px; height: 40px; align-items: center;" ant-click-animating-without-extra-node="false"&gt;&lt;span&gt;+ SAVE&lt;/span&gt;&lt;/button&gt;&lt;button id="btn-cancel-edit-admin" type="button" class="ant-btn ant-btn-default" style="width: 100%; border-radius: 8px; font-size: 16px; height: 40px; align-items: center;"&gt;&lt;span&gt;CANCEL&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/form&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;style rc-util-key="antd-wave"&gt;&lt;/style&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

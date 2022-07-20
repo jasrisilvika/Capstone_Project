@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage Membership","View detail membership","SUCCESS","2022-07-01T20:11:01.7952208+07:00[Asia/Bangkok]","0.0","13.31"
+"Manage Membership","Using cancel button on pop up view and delete membership","SUCCESS","2022-07-01T20:11:15.122244+07:00[Asia/Bangkok]","0.0","13.2"
+"Manage Membership","Delete data membership","SUCCESS","2022-07-01T20:11:28.3361236+07:00[Asia/Bangkok]","0.0","6.98"

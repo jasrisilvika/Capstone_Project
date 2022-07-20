@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage Offline Class Booking","View detail offline class booking","SUCCESS","2022-07-01T20:14:27.5536282+07:00[Asia/Bangkok]","0.0","11.11"
+"Manage Offline Class Booking","Using cancel button on pop up view and delete offline class booking","SUCCESS","2022-07-01T20:14:38.6736354+07:00[Asia/Bangkok]","0.0","10.89"
+"Manage Offline Class Booking","Delete data offline class booking","SUCCESS","2022-07-01T20:14:49.5794505+07:00[Asia/Bangkok]","0.0","5.65"

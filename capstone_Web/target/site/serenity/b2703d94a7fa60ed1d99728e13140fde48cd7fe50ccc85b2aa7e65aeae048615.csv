@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage Offline Class","View detail offline classes","SUCCESS","2022-07-01T20:11:35.343183+07:00[Asia/Bangkok]","0.0","16.88"
+"Manage Offline Class","Using cancel button on view offline classes","SUCCESS","2022-07-01T20:11:52.2351339+07:00[Asia/Bangkok]","0.0","13.99"
+"Manage Offline Class","Add data offline class","SUCCESS","2022-07-01T20:12:06.2583477+07:00[Asia/Bangkok]","0.0","8.66"
+"Manage Offline Class","Edit data offline class","SUCCESS","2022-07-01T20:12:14.9450003+07:00[Asia/Bangkok]","0.0","9.65"
+"Manage Offline Class","Delete data offline class","SUCCESS","2022-07-01T20:12:24.612489+07:00[Asia/Bangkok]","0.0","8.92"
+"Manage Offline Class","Using cancel button on edit delete pop up","SUCCESS","2022-07-01T20:12:33.5441135+07:00[Asia/Bangkok]","0.0","14.44"
+"Manage Offline Class","Using cancel button on add offline class","SUCCESS","2022-07-01T20:12:48.0032165+07:00[Asia/Bangkok]","0.0","7.53"
